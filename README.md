@@ -10,3 +10,4 @@
 - `logic/` — классы Expense и ExpenseTracker
 - `tests/` — модульные тесты на Pytest
 - `main.py` — демонстрация работы классов
+
