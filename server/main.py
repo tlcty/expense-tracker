@@ -17,16 +17,19 @@ class ExpenseIn(BaseModel):
 
 @app.post("/expenses")
 def add_expense(exp: ExpenseIn):
+    ## Добавление новой траты
     tracker.add_expense(Expense(exp.title, exp.category, exp.amount, exp.date))
     return {"status": "ok"}
 
-@app.get("/top-category")
+@app.get("/stats/top_category")
 def get_top_category(month: str):
+    ## Категория с наибольшими тратами за месяц
     result = tracker.top_category(month)
     return {"category": result[0], "total": result[1]} if result else {"message": "Нет данных"}
 
-@app.get("/max-expense")
+@app.get("/stats/max-expense")
 def get_max_expense(month: str, category: str = None):
+    ## Самая крупная трата в категории за месяц
     e = tracker.max_expense(month, category)
     return {
         "title": e.title,
