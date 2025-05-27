@@ -5,7 +5,7 @@ class Expense:
         self.title = title
         self.category = category
         self.amount = amount
-        self.datetime = datetime.strptime(date_str, "%d.%m")
+        self.date = datetime.strptime(date_str, "%d.%m")
 
     def month(self):
         return self.date.strftime("%m")
