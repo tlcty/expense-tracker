@@ -1,6 +1,6 @@
 openapi: 3.0.0
 info:
-  title: Expense Tracker API
+  title: Трекер трат API
   version: 1.0.0
   description: API для сервиса отслеживания трат
 
