@@ -7,7 +7,7 @@
 - `logic/` — логика приложения
 - `tests/` — тесты для логики и API
 - `main.py` — точка входа для запуска сервера
-- `apispec/api_spec.md` —  API
+- `apispec/api_spec.md` —  API, описание
 - `requirements.txt` — зависимости проекта
 - `.gitignore`, `.pre-commit-config.yaml` — настройки для разработки
 
