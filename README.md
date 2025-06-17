@@ -3,6 +3,14 @@
 # Expense Tracker:
 Сервис для отслеживания трат по категориям с RESTful API
 
+# Структура проекта
+- `logic/` — логика приложения
+- `tests/` — тесты для логики и API
+- `main.py` — точка входа для запуска сервера
+- `apispec/api_spec.md` —  API
+- `requirements.txt` — зависимости проекта
+- `.gitignore`, `.pre-commit-config.yaml` — настройки для разработки
+
 # Возможности:
 - Добавление трат по категориям и датам
 - Получение категории с наибольшими расходами за месяц
@@ -46,4 +54,3 @@ curl -X POST "http://localhost:8008/expense" \
 Python 3.10+
 FastAPI
 Pytest
-GitHub
