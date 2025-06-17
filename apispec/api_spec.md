@@ -86,3 +86,11 @@
 404	Категория не найдена
 500	Ошибка сервера
 ```
+
+##
+**CI**
+```
+pip install pre-commit
+pre-commit install
+```
+
